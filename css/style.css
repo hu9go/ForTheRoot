@@ -1,0 +1,95 @@
+html{
+    font-size: 20px;
+    width: 100vw;
+    height: max-content;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+body{
+    width: 100%;
+    height: max-content;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+}
+
+header{
+    width: 100%;
+    height: 4rem;
+    margin: 0;
+    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.2);
+}
+
+header nav{
+    position: relative;
+    padding: 0 2rem;
+    width: inherit;
+    height: 4rem;
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul{
+    width: 95.5%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav img{
+    height: 4rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav span{
+    background-color: rgba(0, 0, 0, 0.473);
+    padding: 0.5rem 2rem;
+    border-radius: 2rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+nav span a{
+    text-decoration: none;
+    color: #2e2e2e;
+}
+
+nav span:nth-child(1){
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+}
+nav span a:nth-child(1){
+    color: black;
+}
+
+nav div span:nth-child(1){
+    background-color: rgba(0, 0, 0, 0.473);
+    width: max-content;
+    font-size: 1rem;
+    font-weight: normal;
+    padding: 0.5rem 2rem;
+}
+nav div span a:nth-child(1){
+    color: white;
+}
+
+.right-side{
+    width: max-content;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+main{
+    width: 98%;
+    height: max-content;
+    margin: 1rem;
+}
