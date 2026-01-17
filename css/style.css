@@ -1,21 +1,23 @@
 html{
     font-size: 20px;
     width: 100vw;
-    height: max-content;
+    height: 100%;
     padding: 0;
     margin: 0;
     overflow-x: hidden;
 }
 body{
     width: 100%;
-    height: max-content;
+    height: 100%;
+    margin: 0;
+    padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f5f5f5;
 }
 
 header{
     width: 100%;
-    height: 4rem;
+    height: 5rem;
     margin: 0;
     box-shadow: 0 7px 7px rgba(0, 0, 0, 0.2);
 }
@@ -24,10 +26,10 @@ header nav{
     position: relative;
     padding: 0 2rem;
     width: inherit;
-    height: 4rem;
-    margin: 1rem 0;
+    height: inherit;
     display: flex;
     align-items: center;
+    background-color: #2e2e2e;
 }
 
 header nav ul{
@@ -43,26 +45,23 @@ header nav ul{
 }
 
 nav img{
-    height: 4rem;
+    height: 4.2rem;
     margin: 0;
     padding: 0;
 }
 
 nav span{
-    background-color: rgba(0, 0, 0, 0.473);
     padding: 0.5rem 2rem;
-    border-radius: 2rem;
     text-align: center;
     cursor: pointer;
 }
 
 nav span a{
     text-decoration: none;
-    color: #2e2e2e;
+    color: #898989;
 }
 
 nav span:nth-child(1){
-    background-color: transparent;
     margin: 0;
     padding: 0;
 }
@@ -71,14 +70,18 @@ nav span a:nth-child(1){
 }
 
 nav div span:nth-child(1){
-    background-color: rgba(0, 0, 0, 0.473);
     width: max-content;
     font-size: 1rem;
     font-weight: normal;
     padding: 0.5rem 2rem;
 }
 nav div span a:nth-child(1){
-    color: white;
+    color: #898989
+}
+
+nav span a:hover{
+    color: #eaeaea;
+    transition: 0.3s;
 }
 
 .right-side{
