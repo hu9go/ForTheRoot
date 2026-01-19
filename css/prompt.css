@@ -31,6 +31,7 @@ body {
   background-color: #2e2e2e;
   opacity: 0;
   transition: opacity 0.5s ease;
+  pointer-events: none;
 }
 
 .sign-in-form {

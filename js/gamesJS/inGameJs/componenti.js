@@ -23,6 +23,7 @@ function signIn(onSubmit) {
   main.appendChild(signInFormConatiner);
 
   signInFormConatiner.style.opacity = "1";
+  signInFormConatiner.style.pointerEvents = "auto";
 
   const signInForm = document.querySelector(".sign-in-form");
   const usernameInput = document.querySelector("#username");
