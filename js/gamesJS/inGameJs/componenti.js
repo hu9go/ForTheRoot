@@ -35,15 +35,3 @@ function signIn(onSubmit) {
     });
   }
 }
-
-function getLocation() {
-  const location = window.location.href.split("/");
-  let usernameRequired = "";
-  location.forEach((element) => {
-    if (element.includes("web")) {
-      const page = element.split(".");
-      usernameRequired = page[0];
-    }
-  });
-  return usernameRequired;
-}

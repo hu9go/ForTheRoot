@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (
                 credenziali[0][0] === usernameRequired &&
                 credenziali[0][1] ===
-                    usernamePassword[0].find(
+                    usernamePassword[3].find(
                         (user) => user.username === usernameRequired,
                     ).password
             ) {
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const location = window.location.href.split("/");
         let usernameRequired = "";
         location.forEach((element) => {
-            if (element.includes("web")) {
+            if (element.includes("reverse")) {
                 const page = element.split(".");
                 usernameRequired = page[0];
             }
