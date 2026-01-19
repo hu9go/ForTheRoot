@@ -1,0 +1,40 @@
+:root{
+    --game-card-bg-color: #f0f0f0;
+    --game-card-border-color: #ccc;
+    --game-card-button-bg-color: #2e2e2e;
+    --game-card-button-text-color: #fff;
+}
+.game-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+    justify-content: center;
+}
+.game-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 15rem;
+    background-color: var(--game-card-bg-color);
+    border: 1px solid var(--game-card-border-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex-grow: 1;
+}
+.game-card button {
+    width: fit-content;
+    background-color: var(--game-card-button-bg-color);
+    color: var(--game-card-button-text-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.game-card button:hover {
+    background-color: #333;
+}
