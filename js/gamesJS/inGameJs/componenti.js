@@ -1,8 +1,7 @@
 const main = document.querySelector("main");
 const header = document.querySelector("header")
 const footer = document.querySelector("footer")
-
-function passwordPrompt(){
+function signIn(){
 
 main.innerHTML = `
 <form class="sign-in-form">
@@ -20,4 +19,5 @@ main.innerHTML = `
       </div>
     </form>`
 
+    document.body.style.backgroundColor = "#2e2e2e";
 }
