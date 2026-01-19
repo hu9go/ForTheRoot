@@ -1,90 +1,90 @@
-:root{
-    --text-color: white;
-    --font-family: 'Courier New', Courier, monospace;
+:root {
+  --text-color: white;
+  --font-family: "Courier New", Courier, monospace;
 }
 
 * {
-    font-family: var(--font-family);
-    font-weight: 900;}
-
-html{
-    font-size: 20px;
-    height: 100vh;
-    width: 100vw;
-    font-family: var(--font-family);
+  font-family: var(--font-family);
+  font-weight: 900;
 }
 
-body{
-    height: inherit;
-    width: inherit;
-    overflow: hidden;
+html {
+  font-size: 20px;
+  height: 100vh;
+  width: 100vw;
+  font-family: var(--font-family);
 }
 
-.sign-in-form{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background-color: rgb(34, 34, 34);
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-    padding: 50px 20px;
-    gap: 25px;
-    border-radius: 10px
-}
-.btns{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    margin-top: 10px;
-    gap: 5px;
-}
-.input-group{
-    margin-left: 0;
-    width: 100%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
+body {
+  height: inherit;
+  width: inherit;
+  overflow: hidden;
 }
 
-.input-group input{
-    color: rgb(67, 67, 67);
-    border-radius: 7px;
-    width: 97.5%;
-    height: 40px;
-    border: none;
+.sign-in-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(34, 34, 34);
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  padding: 50px 20px;
+  gap: 25px;
+  border-radius: 10px;
+}
+.btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin-top: 10px;
+  gap: 5px;
+}
+.input-group {
+  margin-left: 0;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
-
-.input-group label{
-    color: rgb(67, 67, 67);
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 12px;
-    font-size: 15px;
-    transition: 0.2s;
+.input-group input {
+  color: rgb(67, 67, 67);
+  border-radius: 7px;
+  width: 97.5%;
+  height: 40px;
+  border: none;
 }
 
-.input-group input:focus ~ label, 
-.input-group input:valid ~ label{
-    color: var(--text-color);
-    font-size: 12px;
-    top: -11px;
-    left: 5px;
+.input-group label {
+  color: rgb(67, 67, 67);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 12px;
+  font-size: 15px;
+  transition: 0.2s;
 }
 
-.btns input{
-    border: none;
-    flex-grow: 1;
-    padding: 10px;
-    border-radius: 7px;
+.input-group input:focus ~ label,
+.input-group input:valid ~ label {
+  color: var(--text-color);
+  font-size: 12px;
+  top: -11px;
+  left: 5px;
 }
 
-.btns input:first-child{
-    background-color: rgb(135, 192, 135);
+.btns input {
+  border: none;
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 7px;
+}
+
+.btns input:first-child {
+  background-color: rgb(135, 192, 135);
 }
