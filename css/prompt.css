@@ -9,6 +9,7 @@
 }
 
 html {
+  margin: 0;
   font-size: 20px;
   height: 100vh;
   width: 100vw;
@@ -19,6 +20,17 @@ body {
   height: inherit;
   width: inherit;
   overflow: hidden;
+}
+
+.sign-in-form-Conatiner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #2e2e2e;
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
 
 .sign-in-form {
@@ -61,6 +73,7 @@ body {
 }
 
 .input-group label {
+  pointer-events: none;
   color: rgb(67, 67, 67);
   position: absolute;
   top: 50%;
