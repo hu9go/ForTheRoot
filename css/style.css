@@ -138,15 +138,6 @@ button {
 }
 
 footer {
-<<<<<<< HEAD
-  background: #2e2e2e;
-  color: #fff;
-  text-align: center;
-  height: 170px;
-  padding: 3%;
-  width: 100%;
-}
-=======
     position: relative;
     background: #2e2e2e;
     color: #fff;
@@ -157,4 +148,3 @@ footer {
     padding: 3%;
     width: 100%;
 }
->>>>>>> main
