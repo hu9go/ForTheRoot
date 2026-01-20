@@ -137,3 +137,12 @@ button {
     cursor: pointer;
     transition: 0.175s;
 }
+
+footer {
+  background: #2e2e2e;
+  color: #fff;
+  text-align: center;
+  height: 200px;
+  padding: 3%;
+  width: 100%;
+}
