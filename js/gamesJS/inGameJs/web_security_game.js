@@ -5,12 +5,14 @@ document.addEventListener("DOMContentLoaded", function () {
     );
     let credenziali = [];
     let usernameRequired = getLocation();
-    window.onload(() => {
-        if (usernameRequired === "web1") {
-            window.location.replace("kicked.html");
-            window.open("web1.html", "_blank");
-        }
-    });
+    window.onload = () => {
+    if (usernameRequired === "web1") {
+        sessionStorage.setItem("redirected", "true");
+        window.open("web1.html", "_blank");
+        window.location.replace("kicked.html");
+    }
+};
+
 
     main.innerHTML = ""; // Clear main content on load
     signIn((username, password) => {
