@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let credenziali = [];
     let usernameRequired = getLocation();
 
-    main.innerHTML = ""; // Clear main content on load
+    // main.innerHTML = ""; // Clear main content on load
     signIn((username, password) => {
         credenziali = [];
         credenziali.push([username, password]);
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (
             credenziali[0][0] === usernameRequired &&
             credenziali[0][1] ===
-                usernamePassword[0].find(
+                usernamePassword[2].find(
                     (user) => user.username === usernameRequired,
                 ).password
         ) {
@@ -23,17 +23,12 @@ document.addEventListener("DOMContentLoaded", function () {
             signInFormConatiner.style.pointerEvents = "auto";
         }
     });
-    if (usernameRequired === "web1") {
-        document.addEventListener("contextmenu", (e) => {
-            e.preventDefault();
-        });
-    }
 
     function getLocation() {
         const location = window.location.href.split("/");
         let usernameRequired = "";
         location.forEach((element) => {
-            if (element.includes("web")) {
+            if (element.includes("reverse")) {
                 const page = element.split(".");
                 usernameRequired = page[0];
             }
@@ -43,44 +38,52 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function getGameData(usernameRequired) {
         switch (usernameRequired) {
-            case "web0":
-                setupWeb0();
+            case "reverse0":
+                setupReverse0();
                 break;
-            case "web1":
-                setupWeb1();
-                break;
-            case "web2":
-                setupWeb2();
-                break;
-            case "web3":
-                setupWeb3();
+            case "reverse1":
+                setupReverse1();
                 break;
             default:
                 main.innerHTML = `<p>Pagina non trovata</p>`;
         }
     }
 
-    setupWeb0 = () => {
-        main.innerHTML = `<p>Qui trovi la password per la prossima pagina<br><br>
-        Per cambiare livello, cambia l'URL della pagina (/web0 ->
-                /web1).</p>
-        <!-- user: web1 -->
-        <!-- password: A1#b4C9*e2F0g!H8 -->`;
+    setupReverse0 = () => {
+        main.innerHTML = `
+        <form id="resultForm">
+        <input type="text" id="result" />
+        <label for="result">Inserisci risultato</label>
+        <input type="submit" value="Ok" />
+    </form>`;
+
+        const resultForm = document.querySelector("#resultForm");
+
+        resultForm.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            const input = document.querySelector("#result");
+
+            checkPassword(input.value);
+        });
     };
-    setupWeb1 = () => {
+
+    setupReverse1 = () => {
         main.innerHTML = `<p>
-                Qui trovi la password per la prossima pagina ma il tasto destro
-                è disattivato.
-            </p>
-            <!-- complimenti! la soluzione è premere F12. -->
-            <!-- user: web2 -->
-            <!-- password: 7D&3a9$B1e5@fC2R -->`;
+                Password per accedere a krypto2:<br /><br />
+                PbqvsvpnQvPrfner<br /><br />
+                parole chiave{cesare, 13}
+            </p>`;
     };
-    setupWeb2 = () => {
-        main.innerHTML = `<p></p>
-        <img src="files/FTR.png" style="width: 100px; height: auto; background-blend-mode: multiply;" />`;
-    };
-    setupWeb3 = () => {
-        main.innerHTML = `<p>approfindimenti</p>`;
-    };
+
+    function checkPassword(input) {
+        let secret = [82, 51, 118, 51, 114, 53, 51, 36, 49];
+        let result = "";
+
+        for (let i = 0; i < secret.length; i++) {
+            result += String.fromCharCode(secret[i]);
+        }
+
+        console.log(input === result ? "Access Granted" : "Access Denied");
+    }
 });
