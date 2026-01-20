@@ -19,7 +19,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 15rem;
+    height: 30rem;
     background-color: var(--game-card-bg-color);
     border: 1px solid var(--game-card-border-color);
     border-radius: 8px;
