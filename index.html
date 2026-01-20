@@ -5,16 +5,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>ForTheRoot</title>
         <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/index.css" />
         <link rel="shortcut icon" href="img/root.webp" type="image/x-icon" />
     </head>
+
     <body>
-        <!--  -->
         <header>
             <nav>
                 <ul>
-                    <span
-                        ><a href="#"><img src="img/ForTheRoot.png" alt="" /></a
-                    ></span>
+                    <span>
+                        <a href="#">
+                            <img src="img/ForTheRoot.png" alt="" />
+                        </a>
+                    </span>
+
                     <div class="right-side">
                         <span><a href="#" class="selected">Home</a></span>
                         <span><a href="html/info.html">Informazioni</a></span>
@@ -23,83 +27,176 @@
                 </ul>
             </nav>
         </header>
-        <main>
-            <div>
-                <h1>ForTheRoot</h1>
-                <p class="intro-text">
-                    <strong>ForTheRoot</strong> offre un insieme di minigiochi
-                    legati alla sicurezza informatica allo scopo di insegnare i
-                    concetti fondamentali.<br />
-                    Se sei interessato alla <em>cybersecurity</em>, vai su "<a
-                        href="html/game.html"
-                        >giochi</a
-                    >" e inizia a giocare!
-                </p>
-            </div>
-            <div>
-                <h2>Cos'è la cybersecurity?</h2>
-                <p>
-                    l'insieme di tecnologie, processi e pratiche progettati per
-                    proteggere reti, dispositivi, programmi e dati da attacchi
-                    informatici, danni o accessi non autorizzati.
 
-                    ""test per github branch pull""
-                </p>
+        <main>
+            <div class="due-divs">
+                <div class="div1">
+                    <div>
+                        <h1>ForTheRoot</h1>
+                        <p class="intro-text">
+                            <strong>ForTheRoot</strong> offre un insieme di minigiochi
+                            legati alla sicurezza informatica allo scopo di insegnare i
+                            concetti fondamentali.<br />
+                            Se sei interessato alla <em>cybersecurity</em>, ti invito a
+                            leggere questa pagina e poi vai su
+                            "<a href="html/game.html">giochi</a>" e inizia a giocare!
+                        </p>
+                    </div>
+
+                    <div>
+                        <h2>Cos'è la cybersecurity?</h2>
+                        <p>
+                            l'insieme di tecnologie, processi e pratiche progettati per
+                            proteggere reti, dispositivi, programmi e dati da attacchi
+                            informatici, danni o accessi non autorizzati.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h2>Perché la protezione dei dati è importante?</h2>
+                        <ul>
+                            <li>
+                                per prevenire il crimine, come frodi e furto di identita'.
+                            </li>
+                            <li>
+                                per questioni legali la protezione dei dati sono
+                                essenziali.
+                            </li>
+                            <li>
+                                per tutelare la sicurezza di informazioni personali.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="div2">
+                    <img
+                        src="img/FTR.png"
+                        alt="ForTheRoot Logo"
+                        style="width: auto; height: calc(100vh-130px); object-fit: cover;"
+                    />
+                </div>
             </div>
-            <div>
-                <h2>Perché la protezione dei dati è importante?</h2>
+
+            <div class="elenco">
+                <h2>Elementi principali della cybersecurity</h2>
                 <ul>
-                    <li>
-                        per prevenire il crimine, come frodi e furto di
-                        identita'.
-                    </li>
-                    <li>
-                        per questioni legali la protezione dei dati sono
-                        essenziali.
-                    </li>
-                    <li>
-                        per tutelare la sicurezza di informazioni personali.
-                    </li>
+                    <li><strong>Software security:</strong></li>
+                    <ul>
+                        <li>
+                            <strong>Reverse Engineering:</strong> analizzare software
+                            per capire come funziona, utile per studiare malware e
+                            piratare software.
+                        </li>
+                        <li>
+                            <strong>Malware analysis:</strong> studiare software
+                            dannoso per capire come funziona e come difendersi.
+                        </li>
+                        <li>
+                            <strong>Crittografia:</strong> rende i dati illeggibili da
+                            chiunque non è permesso.
+                        </li>
+                    </ul>
+
+                    <li><strong>Network security:</strong></li>
+                    <ul>
+                        <li>
+                            <strong>Network pentesting:</strong> testare la sicurezza
+                            di una rete cercando vulnerabilita' sfruttabili.
+                        </li>
+                        <li>
+                            <strong>VPN:</strong> creare una connessione sicura e
+                            criptata su una rete pubblica.
+                        </li>
+                        <li>
+                            <strong>Firewall:</strong> filtrare il traffico di rete
+                            per bloccare accessi non autorizzati.
+                        </li>
+                        <li>
+                            <strong>Sniffing:</strong> intercettare e analizzare il
+                            traffico di rete per trovare vulnerabilita' o dati
+                            sensibili.
+                        </li>
+                        <li>
+                            <strong>Spoofing:</strong> mascherare l'identita' per
+                            ingannare sistemi o utenti.
+                        </li>
+                    </ul>
+
+                    <li><strong>Web security:</strong></li>
+                    <ul>
+                        <li>
+                            <strong>Web pentesting:</strong> testare la sicurezza di un
+                            sito web cercando vulnerabilita' sfruttabili.
+                        </li>
+                        <li>
+                            <strong>SQL Injection:</strong> attacco che sfrutta
+                            vulnerabilita' web per accedere nei database.
+                        </li>
+                        <li>
+                            <strong>XSS (Cross-Site Scripting):</strong> attacco che
+                            inietta virus in javascript nei siti web.
+                        </li>
+                        <li>
+                            <strong>Authentication security:</strong> password sicure,
+                            autenticazione 2FA, protezione da brute force ecc.
+                        </li>
+                    </ul>
+
+                    <li><strong>Esistono altre discipline:</strong></li>
+                    <ul>
+                        <li><strong>Social engineering</strong></li>
+                        <li><strong>Operational Security (OpSec)</strong></li>
+                        <li>
+                            <strong>Hardware Security (Firmware, Secure Boot, TPM)</strong>
+                        </li>
+                        <li><strong>Digital Forensics</strong></li>
+                    </ul>
                 </ul>
             </div>
-            <div>
-                <h2>Pratiche principali della cybersecurity</h2>
-                <ul>
-                    <li>
-                        Crittografia: rende i dati illeggibili senza una chiave, usata in chat, pagamenti, documenti sensibili.
-                    </li>
-                    <li>
-                        Reverse Engineering: analizzare software per capire 
-                        come funziona, utile per studiare malware.
-                    </li>
-                    <li>
-                        per tutelare la sicurezza di informazioni personali.
-                    </li>
-                </ul>
+
+            <div class="due-divs">
+                <div class="div1">
+                    <h2>Cybersecurity nel mondo del lavoro:</h2>
+                    <p>
+                        Nel lavoro la cybersecurity serve a prevenire, testare e
+                        ridurre i danni.<br />
+                        gli Hacker si dividono in <em>Red Team</em> e
+                        <em>Blue Team</em>.<br />
+                        I <em>Red Team</em> si occupano di attaccare i sistemi per
+                        trovare vulnerabilita',<br />
+                        mentre i <em>Blue Team</em> si occupano di difendere i sistemi
+                        da questi attacchi.
+                    </p>
+                </div>
+
+                <div class="div2">
+                    <h2>Cybersecurity nel mondo della criminalità:</h2>
+                    <p>
+                        Nella criminalità vengono usate le stesse competenze ma con
+                        scopi illegali.<br />
+                        Gli Hacker malintenzionati sono chiamati <em>Black Hat</em
+                        >.<br />
+                        Le pratiche più comuni sono: malware injection, phishing,
+                        ransomware e DDoS.
+                    </p>
+                </div>
             </div>
-            </div>
-            <div>
-                <h2>Cybersecurity nel mondo del lavoro e nella criminalita'</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Eveniet fugiat autem voluptates laborum, deserunt
-                    reprehenderit laboriosam ad aperiam doloremque veritatis
-                    quos repellendus voluptatem praesentium dolores unde dolorem
-                    sint provident beatae.
-                </p>
-            </div>
+
             <div>
                 <h2>Edward Snowden</h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Eveniet fugiat autem voluptates laborum, deserunt
-                    reprehenderit laboriosam ad aperiam doloremque veritatis
-                    quos repellendus voluptatem praesentium dolores unde dolorem
-                    sint provident beatae.
+                    reprehenderit laboriosam ad aperiam doloremque veritatis quos
+                    repellendus voluptatem praesentium dolores unde dolorem sint
+                    provident beatae.
                 </p>
             </div>
         </main>
+
         <footer></footer>
+
         <script src="js/script.js"></script>
     </body>
 </html>

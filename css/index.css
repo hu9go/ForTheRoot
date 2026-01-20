@@ -1,0 +1,14 @@
+.due-divs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    align-items: stretch;
+}
+.div1, .div2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+       flex: 1;
+       justify-content: space-around;
+}
