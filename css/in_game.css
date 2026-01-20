@@ -1,18 +1,20 @@
 body {
-  background-color: #dadada;
-  height: 100vh;
-  width: 100vw;
-  overflow: hidden;
+    background-color: #dadada;
+    height: auto;
+    width: 100vw;
 }
-
+main {
+    height: auto;
+    width: 100vw;
+}
 p {
-  position: absolute;
-  left: 50%;
-  top: 30%;
-  transform: translate(-50%, -50%);
-  width: 80%;
-  height: auto;
-  padding: 30px 50px;
-  background-color: rgb(198, 197, 197);
-  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: auto;
+    padding: 30px 50px;
+    background-color: rgb(198, 197, 197);
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2);
 }
