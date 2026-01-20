@@ -12,6 +12,23 @@
        flex: 1;
        justify-content: space-around;
 }
+.cyber-due-divs {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  gap: 20px;
+  width: 100%;
+  align-items: start;
+}
+
+.cyber-div1 {
+  display: block;
+}
+
+.cyber-div2 {
+  display: grid;
+  gap: 20px;
+  justify-items: center;
+}
 
 #HiddenWiki, #NegozioArmi {
     width: 60%;
