@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+/*document.addEventListener("DOMContentLoaded", function () {
   let credenziali = [];
   let usernameRequired = getLocation();
   window.addEventListener("load", function () {
@@ -42,5 +42,79 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
     return usernameRequired;
+  }
+});
+*/
+
+document.addEventListener("DOMContentLoaded", function () {
+  let credenziali = [];
+  let usernameRequired = getLocation();
+  window.addEventListener("load", function () {
+    
+    signIn((username, password) => {
+      credenziali = [];
+      credenziali.push([username, password]);
+      console.log(credenziali);
+      console.log(credenziali[0], usernameRequired);
+
+      if (
+        credenziali[0][0] === usernameRequired &&
+        credenziali[0][1] ===
+          usernamePassword[0].find((user) => user.username === usernameRequired)
+            .password
+      ) {
+        signInFormConatiner.style.opacity = "0";
+        signInFormConatiner.style.pointerEvents = "none";
+        getGameData(usernameRequired);
+      } else {
+        signInFormConatiner.style.opacity = "1";
+        signInFormConatiner.style.pointerEvents = "auto";
+      }
+    });
+    if (usernameRequired === "web1") {
+      document.addEventListener("contextmenu", disableRightclick);
+    } else {
+      document.removeEventListener("contextmenu", disableRightclick);
+    }
+
+    function disableRightclick(event) {
+      event.preventDefault();
+    }
+  });
+
+  function getLocation() {
+    const location = window.location.href.split("/");
+    let usernameRequired = "";
+    location.forEach((element) => {
+      if (element.includes("web")) {
+        const page = element.split(".");
+        usernameRequired = page[0];
+      }
+    });
+    return usernameRequired;
+  }
+
+  function getGameData(usernameRequired) {
+    switch   (usernameRequired) {
+      case "web0":
+        setupWeb0();
+        break;
+      case "web1":
+        setupWeb1();
+        break;
+      case "web2":
+        setupWeb2();
+        break;
+      case "web3":
+        setupWeb3();
+        break;
+      default:
+        console.log("No game data found for this user.");
+    } 
+  }
+
+  setupWeb0 = () => {
+    console.log("Setting up Web0 game data...");
+    // Add specific setup code for Web0 here
   }
 });
