@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let credenziali = [];
     let usernameRequired = getLocation();
 
-    main.innerHTML = ""; // Clear main content on load
+    // main.innerHTML = ""; // Clear main content on load
     signIn((username, password) => {
         credenziali = [];
         credenziali.push([username, password]);
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
             signInFormConatiner.style.pointerEvents = "auto";
         }
     });
-    if (usernameRequired === "web0") {
+    if (usernameRequired === "web1") {
         document.addEventListener("contextmenu", (e) => {
             e.preventDefault();
         });
@@ -52,24 +52,35 @@ document.addEventListener("DOMContentLoaded", function () {
             case "web2":
                 setupWeb2();
                 break;
+            case "web3":
+                setupWeb3();
+                break;
             default:
                 main.innerHTML = `<p>Pagina non trovata</p>`;
         }
     }
 
     setupWeb0 = () => {
+        main.innerHTML = `<p>Qui trovi la password per la prossima pagina<br><br>
+        Per cambiare livello, cambia l'URL della pagina (/web0 ->
+                /web1).</p>
+        <!-- user: web1 -->
+        <!-- password: A1#b4C9*e2F0g!H8 -->`;
+    };
+    setupWeb1 = () => {
         main.innerHTML = `<p>
-                qui trovi la password per la prossima pagina ma il tasto destro
+                Qui trovi la password per la prossima pagina ma il tasto destro
                 è disattivato.
             </p>
             <!-- complimenti! la soluzione è premere F12. -->
             <!-- user: web2 -->
-            <!-- password: A1#b4C9*e2F0g!H8 -->`;
-    };
-    setupWeb1 = () => {
-        main.innerHTML = `<p>DA LAVORARE</p>`;
+            <!-- password: 7D&3a9$B1e5@fC2R -->`;
     };
     setupWeb2 = () => {
+        main.innerHTML = `<p></p>
+        <img src="files/FTR.png" style="width: 100px; height: auto; background-blend-mode: multiply;" />`;
+    };
+    setupWeb3 = () => {
         main.innerHTML = `<p>approfindimenti</p>`;
     };
 });
