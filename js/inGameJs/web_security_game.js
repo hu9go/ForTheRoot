@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <!-- password: 7D&3a9$B1e5@fC2R -->`;
     };
     setupWeb2 = () => {
-        main.innerHTML = `<p></p>
+        main.innerHTML = `<p>Su questa pagina non c'è niente.</p>
         <img src="files/FTR.png" style="width: 100px; height: auto; background-blend-mode: multiply;" />`;
     };
     setupWeb3 = () => {

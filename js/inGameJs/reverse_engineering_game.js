@@ -52,10 +52,41 @@ document.addEventListener("DOMContentLoaded", function () {
     setupReverse0 = () => {
         main.innerHTML = `
         <form id="resultForm">
+        <pre>help world</pre>
+        <div id="result-group">
         <input type="text" id="result" />
         <label for="result">Inserisci risultato</label>
-        <input type="submit" value="Ok" />
-    </form>`;
+        </div>
+        <input type="submit" value="Ok" id="enter"/>
+    </form>
+    
+    <!-- ------------------------------------------------------------------- -->
+      <!-- Clicca due volte sullo script -->
+      <!-- <script>
+            const resultForm = document.querySelector("#resultForm");
+            
+            resultForm.addEventListener("submit", (e) => {
+                e.preventDefault();
+                
+                const input = document.querySelector("#result");
+                
+                checkPassword(input.value);
+            });
+                
+            function checkPassword(input) {
+                let secret = [82, 51, 118, 51, 114, 53, 51, 36, 49];
+                let result = "";
+                    
+                for (let i = 0; i < secret.length; i++) {
+                    result += String.fromCharCode(secret[i]);
+                }
+                console.log(input === result ? "Access Granted" : "Access Denied");
+            }                        
+</script>  -->
+
+      <!-- --------------------------------------------------------------------- -->
+    
+    `;
 
         const resultForm = document.querySelector("#resultForm");
 
