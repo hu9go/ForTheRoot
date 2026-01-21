@@ -93,6 +93,7 @@ body {
 }
 
 .btns input {
+    cursor: pointer;
     border: none;
     flex-grow: 1;
     padding: 10px;
@@ -100,5 +101,11 @@ body {
 }
 
 .btns input:first-child {
-    background-color: rgb(88, 118, 88);
+    background-color: rgb(156, 207, 156);
+}
+.btns input:first-child:hover {
+    background-color: rgb(109, 209, 109);
+}
+.btns input:last-child:hover {
+    background-color: rgb(189, 190, 189);
 }

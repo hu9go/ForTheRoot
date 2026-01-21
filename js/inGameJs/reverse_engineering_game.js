@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <form id="resultForm">
         <pre>help world</pre>
         <div id="result-group">
-        <input type="text" id="result" />
+        <input type="text" id="result" required/>
         <label for="result">Inserisci risultato</label>
         </div>
         <input type="submit" value="Ok" id="enter"/>
