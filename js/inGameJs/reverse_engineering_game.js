@@ -100,11 +100,9 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     setupReverse1 = () => {
-        main.innerHTML = `<p>
-                Password per accedere a krypto2:<br /><br />
-                PbqvsvpnQvPrfner<br /><br />
-                parole chiave{cesare, 13}
-            </p>`;
+        main.innerHTML = `<p>Congratualazioni! Hai completato Reverse Engineering.<br><br>
+        ←<a href="reverse_engineering.html"> Torna Indietro</a>
+        </p>`;
     };
 
     function checkPassword(input) {
