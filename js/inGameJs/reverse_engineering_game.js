@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
     setupReverse0 = () => {
         main.innerHTML = `
         <form id="resultForm">
-        <pre>help world</pre>
+        <pre>Ispeziona la pagina, analizza il pezzo di codice in js nel "main" e cracca la password.</pre>
         <div id="result-group">
         <input type="text" id="result" />
         <label for="result">Inserisci risultato</label>
