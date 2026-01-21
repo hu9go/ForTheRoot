@@ -79,6 +79,8 @@ document.addEventListener("DOMContentLoaded", function () {
             </p>`;
     };
     setupKrypto3 = () => {
-        main.innerHTML = `<p>Fine.</p>`;
+        main.innerHTML = `<p>Congratualazioni! Hai completato Crittografia.<br><br>
+        ←<a href="crittografia.html"> Torna Indietro</a>
+        </p>`;
     };
 });

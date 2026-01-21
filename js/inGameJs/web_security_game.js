@@ -81,6 +81,8 @@ document.addEventListener("DOMContentLoaded", function () {
         <img src="files/FTR.png" style="width: 100px; height: auto; background-blend-mode: multiply;" />`;
     };
     setupWeb3 = () => {
-        main.innerHTML = `<p>approfindimenti</p>`;
+        main.innerHTML = `<p>Congratualazioni! Hai completato Web Security.<br><br>
+        ←<a href="web_security.html"> Torna Indietro</a>
+        </p>`;
     };
 });
