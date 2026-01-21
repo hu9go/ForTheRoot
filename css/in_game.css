@@ -63,7 +63,8 @@ label {
     transition: 0.175s ease-in-out;
 }
 
-#result:focus ~ label {
+#result-group input:focus ~ label,
+#result-group input:valid ~ label {
     top: 0;
     left: 5px;
     font-size: 14px;
