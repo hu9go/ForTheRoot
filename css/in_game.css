@@ -1,78 +1,96 @@
 body {
-    background-color: #dadada;
-    height: auto;
-    width: 100vw;
+  background-color: #dadada;
+  height: auto;
+  width: 100vw;
 }
 main {
-    height: auto;
-    width: 100vw;
+  height: auto;
+  width: 100vw;
 }
 p,
 form {
-    position: absolute;
-    left: 50%;
-    top: 30%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    height: auto;
-    padding: 30px 50px;
-    background-color: rgb(198, 197, 197);
-    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: auto;
+  padding: 30px 50px;
+  background-color: rgb(198, 197, 197);
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2);
 }
 a {
-    text-decoration: underline;
-    color: #2e2e2e;
-    font-weight: bold;
+  text-decoration: underline;
+  color: #2e2e2e;
+  font-weight: bold;
 }
 
-#result-group{
-    width: 100%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
+#result-group {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 #result {
-    width: 100%;
-    height: 35px;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
+  width: 100%;
+  height: 35px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
 }
 
 #enter {
-    background-color: #2e2e2e;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
+  background-color: #2e2e2e;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
 }
 
 #enter:hover {
-    background-color: #3e3e3e;
+  background-color: #3e3e3e;
 }
 
 label {
-    pointer-events: none;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-70%);
-    left: 12px;
-    font-size: 18px;
-    font-weight: bold;
-    transition: 0.175s ease-in-out;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-70%);
+  left: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.175s ease-in-out;
 }
 
 #result-group input:focus ~ label,
 #result-group input:valid ~ label {
-    top: 0;
-    left: 5px;
-    font-size: 14px;
-    color: #2e2e2e;
-    padding: 0 5px;
+  top: 0;
+  left: 5px;
+  font-size: 14px;
+  color: #2e2e2e;
+  padding: 0 5px;
+}
+
+/* Media */
+
+@media only screen and (max-width: 1024px) {
+  main {
+    display: none;
+  }
+
+  body::before {
+    content: "È necessario un browser con accesso completo agli strumenti per sviluppatori (DevTools).";
+    display: block;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    transform: translatey(-100%);
+    font-family: "Courier New", Courier, monospace;
+  }
 }

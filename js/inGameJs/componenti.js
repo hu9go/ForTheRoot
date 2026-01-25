@@ -2,9 +2,9 @@ const main = document.querySelector("main");
 
 var signInFormConatiner;
 function signIn(onSubmit) {
-    signInFormConatiner = document.createElement("div");
-    signInFormConatiner.classList.add("sign-in-form-Conatiner");
-    signInFormConatiner.innerHTML = `<form class="sign-in-form">
+  signInFormConatiner = document.createElement("div");
+  signInFormConatiner.classList.add("sign-in-form-Conatiner");
+  signInFormConatiner.innerHTML = `<form class="sign-in-form">
     <div class="input-group username">
     <input type="text" name="username" id="username" required/>
     <label for="username">Username</label>
@@ -18,19 +18,19 @@ function signIn(onSubmit) {
     <input type="reset" value="Cancel" id="cancel"/>
     </div>
     </form>`;
-    main.appendChild(signInFormConatiner);
+  main.appendChild(signInFormConatiner);
 
-    signInFormConatiner.style.opacity = "1";
-    signInFormConatiner.style.pointerEvents = "auto";
+  signInFormConatiner.style.opacity = "1";
+  signInFormConatiner.style.pointerEvents = "auto";
 
-    const signInForm = document.querySelector(".sign-in-form");
-    const usernameInput = document.querySelector("#username");
-    const passwordInput = document.querySelector("#password");
+  const signInForm = document.querySelector(".sign-in-form");
+  const usernameInput = document.querySelector("#username");
+  const passwordInput = document.querySelector("#password");
 
-    if (signInForm) {
-        signInForm.addEventListener("submit", (e) => {
-            e.preventDefault();
-            onSubmit(usernameInput.value, passwordInput.value);
-        });
-    }
+  if (signInForm) {
+    signInForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      onSubmit(usernameInput.value, passwordInput.value);
+    });
+  }
 }
