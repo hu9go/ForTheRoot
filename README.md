@@ -136,3 +136,9 @@ ForTheRoot/
 ├── img/
 │   └── ... (images and logos)
 └── README.md
+
+## 📜 License  
+
+This project is open‑source for viewing and learning purposes.  
+All rights reserved © 2026 Malaka Gonawala & Hugo Batoon.  
+Unauthorized copying, redistribution, or commercial use of the code, games, or content is prohibited.
