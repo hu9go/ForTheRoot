@@ -136,7 +136,7 @@ ForTheRoot/
 ├── img/
 │   └── ... (images and logos)
 └── README.md
-
+```
 ## 📜 License  
 
 This project is open‑source for viewing and learning purposes.  
