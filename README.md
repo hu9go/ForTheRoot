@@ -15,14 +15,6 @@
 <img src="https://img.shields.io/badge/Project-School%20Assignment-orange?style=for-the-badge" />
 </a>
 
-<a href="https://github.com/hu9go/ForTheRoot/stargazers">
-<img src="https://img.shields.io/github/stars/hu9go/ForTheRoot?style=for-the-badge" />
-</a>
-
-<a href="https://github.com/hu9go/ForTheRoot/network/members">
-<img src="https://img.shields.io/github/forks/hu9go/ForTheRoot?style=for-the-badge" />
-</a>
-
 <a href="#-license">
 <img src="https://img.shields.io/badge/License-All%20Rights%20Reserved-red?style=for-the-badge" />
 </a>
