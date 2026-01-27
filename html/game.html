@@ -1,73 +1,103 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ForTheRoot: Giochi</title>
-    <link rel="shortcut icon" href="../img/root.webp" type="image/x-icon" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/game.css" />
-  </head>
-  <body>
-    <!--  -->
-    <header>
-      <nav>
-        <ul>
-          <span
-            ><a href="../index.html"
-              ><img src="../img/ForTheRoot.png" alt="" /></a
-          ></span>
-          <div class="right-side">
-            <span><a href="../index.html">Home</a></span>
-            <span><a href="info.html">Informazioni</a></span>
-            <span><a href="#" class="selected">Giochi</a></span>
-          </div>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <div class="game-cards-container">
-        <div class="game-card">
-          <h3>Crittografia</h3>
-          <p>Decifra testi e scopri i metodi di cifratura più usati.</p>
-          <button
-            onclick="
-              window.location.href = 'games/crittografia/crittografia.html'
-            "
-          >
-            Start
-          </button>
-        </div>
-        <div class="game-card">
-          <h3>Reverse Engineering</h3>
-          <p>
-            Analizza un pezzo di codice per scoprire il suo funzionamento e
-            trovare informazioni utili.
-          </p>
-          <button
-            onclick="
-              window.location.href =
-                'games/reverse_engineering/reverse_engineering.html'
-            "
-          >
-            Start
-          </button>
-        </div>
-        <div class="game-card">
-          <h3>Web Security</h3>
-          <p>Scopri le vulnerabilità più comuni delle applicazioni web.</p>
-          <button
-            onclick="
-              window.location.href = 'games/web_security/web_security.html'
-            "
-          >
-            Start
-          </button>
-        </div>
-      </div>
-    </main>
-    <footer>
-      <p>&copy; 2026 ForTheRoot | forthefoot@gmail.com | tel. 123 456 7809</p>
-    </footer>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ForTheRoot: Giochi</title>
+        <link rel="shortcut icon" href="../img/root.webp" type="image/x-icon" />
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/game.css" />
+    </head>
+    <body>
+        <!--  -->
+        <header id="header">
+            <nav>
+                <ul>
+                    <span>
+                        <a href="../index.html">
+                            <img src="../img/ForTheRoot.png" alt="" />
+                        </a>
+                    </span>
+
+                    <div class="mobile-menu">
+                        <span class="mobile-menu-span"></span>
+                        <span class="mobile-menu-span"></span>
+                        <span class="mobile-menu-span"></span>
+                    </div>
+
+                    <div class="right-side">
+                        <span><a href="../index.html">Home</a></span>
+                        <span><a href="info.html">Informazioni</a></span>
+                        <span><a href="#" class="selected">Giochi</a></span>
+                    </div>
+                </ul>
+            </nav>
+            <div class="dropdown-menu">
+                <span class="dropdown-menu-span"
+                    ><a href="../index.html">Home</a></span
+                >
+                <span class="dropdown-menu-span"
+                    ><a href="info.html">Informazioni</a></span
+                >
+                <span class="dropdown-menu-span"
+                    ><a href="#" class="selected">Giochi</a></span
+                >
+            </div>
+        </header>
+        <main>
+            <div class="game-cards-container">
+                <div class="game-card">
+                    <h3>Crittografia</h3>
+                    <p>
+                        Decifra testi e scopri i metodi di cifratura più usati.
+                    </p>
+                    <button
+                        onclick="
+                            window.location.href =
+                                'games/crittografia/crittografia.html'
+                        "
+                    >
+                        Start
+                    </button>
+                </div>
+                <div class="game-card">
+                    <h3>Reverse Engineering</h3>
+                    <p>
+                        Analizza un pezzo di codice per scoprire il suo
+                        funzionamento e trovare informazioni utili.
+                    </p>
+                    <button
+                        onclick="
+                            window.location.href =
+                                'games/reverse_engineering/reverse_engineering.html'
+                        "
+                    >
+                        Start
+                    </button>
+                </div>
+                <div class="game-card">
+                    <h3>Web Security</h3>
+                    <p>
+                        Scopri le vulnerabilità più comuni delle applicazioni
+                        web.
+                    </p>
+                    <button
+                        onclick="
+                            window.location.href =
+                                'games/web_security/web_security.html'
+                        "
+                    >
+                        Start
+                    </button>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>
+                &copy; 2026 ForTheRoot | forthefoot@gmail.com | tel. 123 456
+                7809
+            </p>
+        </footer>
+        <script src="../js/script.js"></script>
+    </body>
 </html>

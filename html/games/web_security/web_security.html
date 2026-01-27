@@ -1,55 +1,75 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ForTheRoot: WebSecurity</title>
-    <link
-      rel="shortcut icon"
-      href="../../../img/root.webp"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="../../../css/style.css" />
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <span>
-            <a href="../../../index.html">
-              <img src="../../../img/ForTheRoot.png" alt="" />
-            </a>
-          </span>
-          <div class="right-side">
-            <span><a href="../../../index.html">Home</a></span>
-            <span><a href="../../../html/info.html">Informazioni</a></span>
-            <span
-              ><a href="../../../html/game.html" class="selected"
-                >Giochi</a
-              ></span
-            >
-          </div>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <div class="tornaIndietro">
-        <h4>←<a href="../../game.html"> Torna Indietro</a></h4>
-      </div>
-      <div>
-        <h1>Web Security</h1>
-        <p class="intro-text">
-          In questo minigioco, il tuo obiettivo è identificare le vulnerabilità
-          di sicurezza comuni nelle applicazioni web. La modalità ha 4 livelli e
-          avanzerai trovando la password per il livello successivo.
-        </p>
-      </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ForTheRoot: WebSecurity</title>
+        <link
+            rel="shortcut icon"
+            href="../../../img/root.webp"
+            type="image/x-icon"
+        />
+        <link rel="stylesheet" href="../../../css/style.css" />
+    </head>
+    <body>
+        <header id="header">
+            <nav>
+                <ul>
+                    <span>
+                        <a href="../../../index.html">
+                            <img src="../../../img/ForTheRoot.png" alt="" />
+                        </a>
+                    </span>
 
-      <div>
-        <h3>Username: web0</h3>
-        <h3>Password: web0</h3>
-      </div>
-      <a href="web0.html" target="_blank" class="ancorButton">Inizia</a>
-    </main>
-  </body>
+                    <div class="mobile-menu">
+                        <span class="mobile-menu-span"></span>
+                        <span class="mobile-menu-span"></span>
+                        <span class="mobile-menu-span"></span>
+                    </div>
+
+                    <div class="right-side">
+                        <span><a href="../../../index.html">Home</a></span>
+                        <span><a href="../../info.html">Informazioni</a></span>
+                        <span
+                            ><a href="../../game.html" class="selected"
+                                >Giochi</a
+                            ></span
+                        >
+                    </div>
+                </ul>
+            </nav>
+            <div class="dropdown-menu">
+                <span class="dropdown-menu-span"
+                    ><a href="../../../index.html">Home</a></span
+                >
+                <span class="dropdown-menu-span"
+                    ><a href="../../info.html">Informazioni</a></span
+                >
+                <span class="dropdown-menu-span"
+                    ><a href="../../game.html" class="selected">Giochi</a></span
+                >
+            </div>
+        </header>
+        <main>
+            <div class="tornaIndietro">
+                <h4>←<a href="../../game.html"> Torna Indietro</a></h4>
+            </div>
+            <div>
+                <h1>Web Security</h1>
+                <p class="intro-text">
+                    In questo minigioco, il tuo obiettivo è identificare le
+                    vulnerabilità di sicurezza comuni nelle applicazioni web. La
+                    modalità ha 4 livelli e avanzerai trovando la password per
+                    il livello successivo.
+                </p>
+            </div>
+
+            <div>
+                <h3>Username: web0</h3>
+                <h3>Password: web0</h3>
+            </div>
+            <a href="web0.html" target="_blank" class="ancorButton">Inizia</a>
+        </main>
+        <script src="../../../js/script.js"></script>
+    </body>
 </html>
