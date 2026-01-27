@@ -1,15 +1,35 @@
 # 🌱 ForTheRoot  
 *A student‑made website introducing the basics of cybersecurity through simple, fun mini‑games.*
 
+<p align="center">
+
+<a href="https://github.com/hu9go/ForTheRoot">
+<img src="https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge" />
+</a>
+
+<a href="https://github.com/hu9go/ForTheRoot">
+<img src="https://img.shields.io/badge/Made%20With-HTML%20%7C%20CSS%20%7C%20JS-blue?style=for-the-badge" />
+</a>
+
+<a href="https://github.com/hu9go/ForTheRoot">
+<img src="https://img.shields.io/badge/Project-School%20Assignment-orange?style=for-the-badge" />
+</a>
+
+<a href="#-license">
+<img src="https://img.shields.io/badge/License-All%20Rights%20Reserved-red?style=for-the-badge" />
+</a>
+
+</p>
+
 ---
 
 ## 📌 Overview  
 **ForTheRoot** is a school project created by two students passionate about cybersecurity and web development.  
 The goal of the site is to introduce beginners to the fundamentals of cybersecurity through short explanations and three interactive mini‑games:
 
-- 🔐 **Web Security** — 3 levels  
-- 🔍 **Reverse Engineering** — 1 level  
 - 🔑 **Cryptography** — 3 levels  
+- 🔍 **Reverse Engineering** — 1 level  
+- 🔐 **Web Security** — 3 levels  
 
 The website content is written in **Italian**, while this README is in English for broader accessibility.
 
@@ -18,13 +38,11 @@ The website content is written in **Italian**, while this README is in English f
 
 ---
 
-## 👥 Team  
-| Role | Description |
-|------|-------------|
-| 💻 **Frontend & Game Developer** | Built the website structure, CSS, JavaScript, and all mini‑games |
-| 🛡️ **Cybersecurity Researcher** | Provided ideas, explanations, and cybersecurity knowledge |
-
-A collaboration between two students combining **web development** and **cybersecurity** skills.
+## 🙌 Contributors  
+| Name | Role | GitHub |
+|------|------|--------|
+| **Malaka Gonawala** | Frontend Developer & Game Creator | [GitHub Profile](https://github.com/Malaka-Gonawala) |
+| **Hugo Batoon** | Cybersecurity Researcher & Content Writer | [GitHub Profile](https://github.com/hu9go) |
 
 ---
 
@@ -32,47 +50,52 @@ A collaboration between two students combining **web development** and **cyberse
 
 Each game teaches a basic cybersecurity concept through simple challenges.
 
-### 🔐 Web Security (3 Levels)  
-Learn about common vulnerabilities and how attackers exploit them.
+---
+
+### 🔑 Cryptography (3 Levels)  
+**Hint:** Follow the instructions and try to decode the password.
 
 <details>
-  <summary>📘 Show answers for Web Security</summary>
+  <summary>📘 Show Cryptography Answers</summary>
 
-  <!-- Replace the placeholders below with the real answers/flags -->
-
-  - **Level 1:** `TODO: add solution here`  
-  - **Level 2:** `TODO: add solution here`  
-  - **Level 3:** `TODO: add solution here`  
+| Page    | Password            |
+|---------|----------------------|
+| krypto0 | `krypto0`           |
+| krypto1 | `Psswrd&C0rr3tt4!`  |
+| krypto2 | `CodificaDiCesare`  |
+| krypto3 | `password`          |
 
 </details>
 
 ---
 
 ### 🔍 Reverse Engineering (1 Level)  
-Analyze a small piece of logic and figure out the hidden output.
+**Hint:** Try to crack the password by analyzing the JavaScript and watching the console.
 
 <details>
-  <summary>📘 Show answer for Reverse Engineering</summary>
+  <summary>📘 Show Reverse Engineering Answers</summary>
 
-  <!-- Replace the placeholder below with the real answer/flag -->
-
-  - **Reverse Engineering Flag:** `TODO: add solution here`  
+| Page      | Password     |
+|-----------|--------------|
+| reverse0  | `reverse0`   |
+| reverse1  | `R3v3r53$1`  |
 
 </details>
 
 ---
 
-### 🔑 Cryptography (3 Levels)  
-Practice decoding simple encrypted messages.
+### 🔐 Web Security (3 Levels)  
+**Hint:** Try using DevTools to find vulnerabilities in the page.
 
 <details>
-  <summary>📘 Show answers for Cryptography</summary>
+  <summary>📘 Show Web Security Answers</summary>
 
-  <!-- Replace the placeholders below with the real answers/flags -->
-
-  - **Level 1:** `TODO: add solution here`  
-  - **Level 2:** `TODO: add solution here`  
-  - **Level 3:** `TODO: add solution here`  
+| Page | Password |
+|------|----------|
+| web0 | `web0` |
+| web1 | `A1#b4C9*e2F0g!H8` |
+| web2 | `7D&3a9$B1e5@fC2R` |
+| web3 | `2E!8f5#A0c3*bB91` |
 
 </details>
 
@@ -105,3 +128,9 @@ ForTheRoot/
 ├── img/
 │   └── ... (images and logos)
 └── README.md
+```
+## 📜 License  
+
+This project is open‑source for viewing and learning purposes.  
+All rights reserved © 2026 Malaka Gonawala & Hugo Batoon.  
+Unauthorized copying, redistribution, or commercial use of the code, games, or content is prohibited.
