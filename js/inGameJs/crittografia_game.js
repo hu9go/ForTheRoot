@@ -60,8 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 Password per accedere a krypto1:<br /><br />
                 UHNzd3JkJkMwcnIzdHQ0IQ==<br /><br />
                 la codifica è base64<br /><br />
-                Per cambiare livello, cambia l'URL della pagina (/krypto0 ->
-                /krypto1). <a href='krypto1.html'>Continua</a>→
+                <a href='krypto1.html'>Continua</a>→
             </p>`;
     };
     setupKrypto1 = () => {
