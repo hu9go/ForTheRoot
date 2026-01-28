@@ -68,8 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     setupWeb0 = () => {
         main.innerHTML = `<p>Qui trovi la password per la prossima pagina<br><br>
-        Per cambiare livello, cambia l'URL della pagina (/web0 ->
-                /web1). <a href='#' id='web0-redirected'>Continua</a>→</p>
+        <a href='#' id='web0-redirected'>Continua</a>→</p>
         <!-- user: web1 -->
         <!-- password: A1#b4C9*e2F0g!H8 -->`;
     };
