@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
     setupReverse0 = () => {
         main.innerHTML = `
         <form id="resultForm">
-        <pre>Ispeziona la pagina, analizza il pezzo di codice in js nel "main" e cracca la password. <br>Tieni d'occhio il <u>console</u></pre> <a href='reverse1.html'>Continua</a>→
+        <pre>Ispeziona la pagina, analizza il pezzo di codice in js nel "main" e cracca la password. <br>Tieni d'occhio la <u>console</u></pre> <a href='reverse1.html'>Continua</a>→
         <div id="result-group">
         <input type="text" id="result" required/>
         <label for="result">Inserisci risultato</label>
@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 for (let i = 0; i < secret.length; i++) {
                     result += String.fromCharCode(secret[i]);
                 }
-                console.log(input === result ? "Accesso Concesso" : "Access Negato");
+                console.log(input === result ? "Accesso Garantito" : "Accesso Negato");
             }                        
 </script>  -->
 
@@ -113,6 +113,6 @@ document.addEventListener("DOMContentLoaded", function () {
             result += String.fromCharCode(secret[i]);
         }
 
-        console.log(input === result ? "Accesso Concesso" : "Accesso Negato");
+        console.log(input === result ? "Accesso Garantito" : "Accesso Negato");
     }
 });
